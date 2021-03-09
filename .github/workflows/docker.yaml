@@ -19,8 +19,8 @@ jobs:
       - name: Calculate Docker image tags
         id: tags
         env:
-          # DOCKER_IMAGES: "ghcr.io/snagi/cdkbot-hostpath-provisioner snagi/cdkbot-hostpath-provisioner"
-          DOCKER_IMAGES: "snagi/cdkbot-hostpath-provisioner"
+          # DOCKER_IMAGES: "ghcr.io/snagi/oauth2-proxy snagi/oauth2-proxy"
+          DOCKER_IMAGES: "snagi/oauth2-proxy"
         run: |
           case $GITHUB_REF in
             refs/tags/*)  VERSION=${GITHUB_REF#refs/tags/};;
